@@ -1,0 +1,21 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+  h3 {
+    font-family: "Chilanka", cursive !important;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-family: "Chilanka", cursive !important;
+    font-weight: 100;
+    font-size: 35px;
+  }
+
+  h1 {
+    font-family: "Chilanka", cursive !important;
+    font-size: 50px;
+    font-weight: 100;
+  }
+
