@@ -1,4 +1,5 @@
  <template>
+ <section class="portifolio">
   <div class="container" id="overlay">
     <v-row class="justify-center">
       <h1>Portifolio</h1>
@@ -7,17 +8,17 @@
     <v-tabs v-model="tab" centered icons-and-text>
       <v-tabs-slider></v-tabs-slider>
 
-      <v-tab href="#tab-1">
+      <v-tab class="tab" href="#tab-1">
         Recentes
         <v-icon>mdi-history</v-icon>
       </v-tab>
 
-      <v-tab href="#tab-2">
+      <v-tab class="tab" href="#tab-2">
         Favoritos
         <v-icon>mdi-heart</v-icon>
       </v-tab>
 
-      <v-tab href="#tab-3">
+      <v-tab class="tab" href="#tab-3">
         Todos
         <v-icon>mdi-account-box</v-icon>
       </v-tab>
@@ -35,7 +36,7 @@
               >
                 <v-card
                   color="grey lighten-1"
-                  class="ma-4"
+                  class="ma-4 card"
                   height="200"
                   width="200"
                 >
@@ -67,7 +68,7 @@
               >
                 <v-card
                   color="grey lighten-1"
-                  class="ma-4"
+                  class="ma-4 card"
                   height="200"
                   width="200"
                 >
@@ -99,7 +100,7 @@
               >
                 <v-card
                   color="grey lighten-1"
-                  class="ma-4"
+                  class="ma-4 card"
                   height="200"
                   width="200"
                 >
@@ -127,10 +128,12 @@
       </v-overlay>
     </v-row>
   </div>
+  </section>
 </template>
 
 
 <script>
+import ScrollReveal from "scrollreveal";
 export default {
   data() {
     return {
@@ -138,7 +141,7 @@ export default {
       clickImg: null,
       confirmLay: 0,
       model: null,
-      tab: "tab-3",
+      tab: "null",
       recentes: [
         { img: "../assets/11.png" },
         { img: "../assets/12.png" },
@@ -194,6 +197,15 @@ export default {
   },
 
   mounted() {
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "80px",
+      duration: 2000,
+      reset: true
+    });
+
+    sr.reveal(".portifolio", {});
+
     let alias = this;
     let teste = document.querySelector("#overlay");
     teste.addEventListener("click", function() {
