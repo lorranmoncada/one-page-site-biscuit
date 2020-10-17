@@ -101,7 +101,7 @@
       </div>
     </footer>
     <v-fab-transition>
-      <v-btn key="mdi-share-variant" fab bottom left class="v-btn--example">
+      <v-btn key="mdi-share-variant" fab bottom left class="v-btn--example mb-3">
         <a
           href="https://wa.me/5581987772112?text=Olá%20Preciso%20de%20uma%20Consulta!"
           target="_blanck"

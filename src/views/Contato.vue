@@ -168,8 +168,8 @@ export default {
       reset: true
     });
 
-    sr.reveal(".contato", {});
-    sr.reveal(".input1", { delay: 200 });
+sr.reveal(".contato", {});
+    sr.reveal(".contact1-form-title", {});
   }
 };
 </script>
