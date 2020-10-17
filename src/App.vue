@@ -103,7 +103,7 @@
     <v-fab-transition>
       <v-btn key="mdi-share-variant" fab bottom left class="v-btn--example mb-3">
         <a
-          href="https://wa.me/5581987772112?text=Olá%20Preciso%20de%20uma%20Consulta!"
+          href="https://wa.me/5581987772112?text=Olá%20Preciso%20de%20um%20Orçamento!"
           target="_blanck"
           ><img
             src="../src/assets/whatsapp.jpg"
