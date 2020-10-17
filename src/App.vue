@@ -4,8 +4,16 @@
       <nav color="teste" style="position:fixed;width:100%;" ref="nav">
         <v-row>
           <v-col>
-            <h2 class="ml-5"><a href="#home"><img style="border-radius:50px;" src="./assets/logo.jpg" width="80rem" height="80rem" alt=""></a></h2></v-col
-          >
+            <h2 class="ml-5">
+              <a href="#home"
+                ><img
+                  style="border-radius:50px;"
+                  src="./assets/logo.jpg"
+                  width="80rem"
+                  height="80rem"
+                  alt=""
+              /></a></h2
+          ></v-col>
           <v-col v-if="!isMobile">
             <v-row class="justify-end">
               <v-col v-for="(menu, href, index) in listaMenu" :key="index">
@@ -34,7 +42,7 @@
                 <v-list style="text-align:center;">
                   <v-list-item v-for="(menu, index) in listaMenu" :key="index">
                     <v-list-item-title class="black--text font"
-                      ><a :href="menu.href" style="text-decoration: none;">{{
+                      ><a :href="menu.href" class="menu-font">{{
                         menu.nome
                       }}</a></v-list-item-title
                     >
@@ -62,17 +70,15 @@
       </v-main>
     </div>
 
-    <footer class="footer-area" dark padless>
+     <footer class="footer-area" dark padless>
       <div class="container">
         <div class="">
-          <!--  <div class="site-logo text-center py-4">
-                    <a href="#"><img src="./assets/11.png" alt="logo"></a>
-                </div> -->
+          
           <v-card-title style="justify-content: center;">
             <strong>Siga-nos</strong>
-            <v-btn v-for="(item,n) in icons" :key="n" class="mx-4" icon>
+            <v-btn v-for="(item, n) in icons" :key="n" class="mx-4" icon>
               <a :href="item.url" target="_blank" rel="noopener noreferrer"
-                ><v-icon size="24px">
+                ><v-icon style="color:white;" size="24px">
                   {{ item.icon }}
                 </v-icon></a
               >
@@ -85,7 +91,7 @@
               <a
                 href="https://www.instagram.com/lorran.mendes/?hl=pt-br"
                 target="_blanck"
-                ><span style="color: tomato;"
+                ><span style="color: white;"
                   ><strong> Lorran Mendes</strong></span
                 ></a
               >
@@ -95,22 +101,13 @@
       </div>
     </footer>
     <v-fab-transition>
-      <v-btn
-        key="mdi-share-variant"
-        color="red"
-        fab
-        large
-        dark
-        bottom
-        left
-        class="v-btn--example"
-      >
+      <v-btn key="mdi-share-variant" fab bottom left class="v-btn--example">
         <a
-          href="https://wa.me/5581988100870?text=Olá%20Preciso%20de%20uma%20Consulta!"
+          href="https://wa.me/5581987772112?text=Olá%20Preciso%20de%20uma%20Consulta!"
           target="_blanck"
           ><img
             src="../src/assets/whatsapp.jpg"
-            width="68px"
+            width="75px"
             style="margin-top: 3px; margin-right: 2px;"
             alt="whatsaap"
           />
@@ -177,9 +174,15 @@ export default {
 </script>
 
 <style>
+.menu-font {
+  text-decoration: none;
+  font-size: 40px;
+}
 .footer-area {
-  padding: 5rem 0;
-  background: url(./assets/footer-bg.png) no-repeat;
+  background-color: #515151;
+  color: #ffffff;
+  /* padding: 5rem 0;
+  background: url(./assets/footer-bg.png) no-repeat; */
 }
 a {
   text-decoration: none;
@@ -216,7 +219,7 @@ a {
 @media screen and (max-width: 500px) {
   .main {
     margin-top: 16rem;
-    font-size: 20px;
+    font-size: 30px;
   }
   .font {
     font-size: 20px;

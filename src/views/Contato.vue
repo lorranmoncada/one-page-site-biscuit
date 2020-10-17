@@ -2,6 +2,9 @@
   <section class="container contato">
     <v-row class="justify-center">
       <h1>Contato</h1>
+      <!-- <div id="emmy-sub">
+          <span id="sublinhado"></span>
+        </div> -->
     </v-row>
     <div class="background">
       <form class="form" @submit.prevent="sendEmail">
@@ -12,12 +15,14 @@
         </v-row>
         <v-row justify="center"
           ><input
+            required
             type="text"
             placeholder="Nome"
             name="name"
             class="form-nome mb-4"/></v-row
         ><v-row justify="center"
           ><input
+            required
             type="number"
             placeholder="Telefone"
             name="telephone"
@@ -25,12 +30,14 @@
         /></v-row>
         <v-row justify="center"
           ><input
+            required
             name="email"
             type="email"
             placeholder="Email"
             class="form-email mb-4"/></v-row
         ><v-row justify="center"
           ><textarea
+            required
             name="message"
             placeholder="Ecreva-nos uma breve descrição do que você precisa :)"
             class="form-text-area"
@@ -42,7 +49,7 @@
 
         <v-row class="mt-3" justify="center">
           <v-btn type="submit" depressed>
-            Normal
+            Enviar
           </v-btn>
         </v-row>
       </form>
@@ -119,12 +126,42 @@ export default {
   color: white !important;
 }
 
+h1::after {
+  position: absolute;
+  content: "";
+  width: 10.7rem;
+  height: 0.18rem;
+  margin-left: 7px;
+  border-radius: 30px;
+  background-color: tomato;
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+}
+
 .form-text-area {
   width: 40%;
   border: 2px solid #fff;
   background-color: #6b53e7;
   border-radius: 5px;
   color: white !important;
+}
+
+/* #sublinhado {
+  position: absolute;
+  content: "";
+  width: 6.7rem;
+  height: 0.18rem;
+  margin-left: -13px;
+  border-radius: 30px;
+  background-color: tomato;
+} */
+
+#emmy-sub {
+  margin-bottom: 13px;
+  margin-top: -9px;
+  display: flex;
+  justify-content: center;
 }
 
 textarea:focus,

@@ -215,4 +215,16 @@ export default {
   transform: scale(1.3);
   cursor: pointer;
 }
+h1::after {
+  position: absolute;
+  content: "";
+  width: 12.1rem;
+  height: 0.18rem;
+  margin-left: 2px;
+  border-radius: 30px;
+  background-color: tomato;
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+}
 </style>

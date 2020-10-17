@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.be600ea5e7545ffa1e77f4ba41353577.js"
+  "/precache-manifest.d4a3839302550205a711192214f42e8f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "mily-biscuit"});

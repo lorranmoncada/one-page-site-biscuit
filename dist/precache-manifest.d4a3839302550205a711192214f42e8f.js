@@ -1,11 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b48fc72562d9707033cf",
-    "url": "/css/app.eab42b3a.css"
+    "revision": "4631a0f7a187bbb28ab3",
+    "url": "/css/app.56bdad4d.css"
   },
   {
     "revision": "37b62038072d1ef30ac6",
     "url": "/css/chunk-vendors.84b9886f.css"
+  },
+  {
+    "revision": "1ba2ae710d927f13d483fd5d1e548c9b",
+    "url": "/favicson.ico"
   },
   {
     "revision": "a706e604a4f8c47017baf82836bfb11d",
@@ -104,12 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/whatsapp.69ae9747.jpg"
   },
   {
-    "revision": "51b8f0f8fa419b0274fa51d2d3cd1145",
+    "revision": "ddc74a7ae3b55024949123989e451745",
     "url": "/index.html"
   },
   {
-    "revision": "b48fc72562d9707033cf",
-    "url": "/js/app.075a04f3.js"
+    "revision": "4631a0f7a187bbb28ab3",
+    "url": "/js/app.4dddc521.js"
   },
   {
     "revision": "37b62038072d1ef30ac6",
